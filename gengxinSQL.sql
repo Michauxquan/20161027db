@@ -1,3 +1,9 @@
+ Alter table CusUserInfo add SourceType  int  default(0)
+ GO 
+ Update CusUserInfo set SourceType=0 
+  GO
+  Alter table CusUserInfo add SourceType  int  default(0) not null
+ GO
  alter  table dbo.CusBettMode alter column BettMdNum varchar(300)
  GO
  
