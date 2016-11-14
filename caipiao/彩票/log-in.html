@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+		<meta charset="UTF-8">
+		<title>娱乐平台-用户登录</title>
+		<meta name="description" content="彩票，娱乐平台" />
+		<meta name="keywords" content="彩票，娱乐平台" />
+		<style>
+			*{list-style: none;padding: 0;margin: 0;}
+			body{font-family: arial,sans-serif,"微软雅黑";}
+			.bg{max-width: 100%;min-width: 960px;}
+			.logo{width: 210px;margin: 0 auto;height: 120px;top: 50px;position: relative;}
+			.content{max-width: 100%;min-width:960px;height: 520px;background: url(img/bg.jpg)no-repeat;margin: 0;padding: 0;top:50px;position: relative;}
+			.enterBg{  background: rgba(23,26,33,0.5);
+			           width: 450px;
+			           height: 350px;
+			           right: 0;
+						position: absolute;
+					    bottom: 70px;
+					    margin-right: 200px;
+					    padding: 30px 20px 15px;
+					    -webkit-box-shadow: 1px 1px 5px #666;
+					    -ms-box-shadow: 1px 1px 5px #666;
+					    -moz-box-shadow: 1px 1px 5px #666;
+					    -o-box-shadow: 1px 1px 5px #666;
+					    box-shadow: 1px 1px 5px #666;
+           			}
+           	.headPicture{width: 150px;height: 150px;margin: 0 auto;}
+           	.login-input,.next{width: 330px;margin: 0 auto;}	
+           	form{display: block;}	
+           	.name li{float: left;margin-top:20px;font-size: 20px;color: white;}
+           	.name-input,.name-input1{width: 220px;height: 20px;background: transparent;border: none;border-bottom: 2px solid white;outline: medium;font-size: 18px;padding-left: 16px;color: #FFFFFF;}
+           	.pw{clear: both;}
+           	.next{clear: both;}
+           	.next .next1{width: 330px;height: 30px;border: 2px solid white;border-radius: 8px;background: transparent;margin-top: 20px;color: white;font-weight: 600;font-size: 18px;cursor: pointer;outline: medium;}
+           	.p{width: 150px;bottom: 10px;right: 20px;position: absolute;color: white;font-size:18px;font-weight: 600;}
+           	footer{max-width:78%;min-width:0px;height:28px;margin: 0 auto;margin-top: 50px;transform: rotateY(100%);font-size: 14px;position: absolute;left: 0;right: 0;}
+           	.left{float: left;height: 28px;line-height: 28px;}
+           	.right{float: right;right: 200px;height: 28px;line-height: 28px;}
+		</style>
+	</head>
+	<body>
+		<div class="bg">
+			<div class="logo">
+				<img src="img/litte-icon/logo.png" alt="logo" title="logo-title" />
+			</div>
+			<div class="content">
+				<div class="enterBg">
+					<form action method="post" name="login">
+						<div class="headPicture">
+							<img src="img/head.jpg" width="150" height="150" style="border-radius: 50%;" alt="userPicture" title=""/>
+						</div>
+						<div class="login-input">
+							<ul class="name">
+								<li><label for="username">通行证：</label></li>
+								<li><input type="text" name="username" id="username" placeholder="输入用户名" class="name-input" /></li>
+								<li><span for="password">密&nbsp;&nbsp;&nbsp;&nbsp;码：</span></li>
+								<li>
+									<span><input type="password" name="password" id="password" placeholder="游戏密码" class="name-input1"/></span>
+								</li>
+							</ul>
+							
+						</div>
+						<div class="next">
+							<input type="submit" value="登录" class="next1" />
+						</div>
+						<div class="p">
+							<span class="text">最真实的模拟游戏</span>
+						</div>
+					</form>
+				</div>
+			</div>
+			<footer>
+				<div class="left">
+					版权所有Copyright © 2016 千古网络 All Rights Reserved
+				</div>
+				<div class="right">
+					<span>请使用火狐、谷歌、IE10.0浏览器，以达到最佳使用效果</span>
+				</div>
+			</footer>
+		</div>
+		<script src="js/jquery-2.1.4.js"></script>
+		<script type="text/javascript"> 		
+		    $(".next1").click(function(){
+		    	var reg1 = /^[a-zA-Z 0-9]+$/;
+		        var reg = /[\da-zA-Z]*\d+[a-zA-Z]+[\da-zA-Z]*/;
+		        if ($(".name-input").val() == ""||$(".name-input1").val() == "") {
+		            alert('您好！\n*用户名不能为空！或*密码不能为空！') 
+		            return false;
+		        }else if(!reg.test($(".name-input1").val())&&$(".name-input1").val() !==""){
+		            alert("*密码不正确！"); 
+		            return false;
+		        }
+		    });
+		</script>
+	</body>
+</html>

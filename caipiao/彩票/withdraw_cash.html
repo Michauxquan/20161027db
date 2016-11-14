@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta charset="UTF-8">
+		<title>提现</title>
+		<link rel="stylesheet" type="text/css" href="css/message.css" />
+		<link rel="stylesheet" type="text/css" href="css/active.css" />
+		<style type="text/css">
+			body{margin: 25px 0 0 0;}
+			a{text-decoration: none;color: black;}
+		</style>
+	</head>
+	<body>
+		<div class="p-header">
+			<p class="current-location">
+				<span>当前位置：</span><span> &gt; 提现 </span>
+			</p>
+		</div>
+		<div class="showtime1">
+			<form action="" method="post">
+				<table class="stable1 ">
+					<thead>
+						<tr>
+							<td style="width: 10%;"><img src="img/head.jpg" width="100" height="100" alt="头像" class="user-head"/></td>
+							<td style="text-align: left;width: 34%;">
+								<p style="font-size: 20px;font-weight: 500;">阿拉丁神灯 </p>
+								<p style="padding-top: 14px;">账户余额：<span class="c-ef3552">0.00 元</span> </p>
+							</td>
+							<td style="width: 38%;"></td>
+						</tr>
+						<tr class="mg">
+							<td colspan="3">
+								<label for="wh-account">请输入提现账号：<span><input type="text" name="wh-account"class="with-input account" /></span><span class="xing">*</span><span class="t-c">注意大小写、准确输入提现账号</span></label>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3"><div class="msg acc"></div></td>
+						</tr>
+						<tr class="mg">
+							<td colspan="3">
+								<label for="wh-phone">确认您的手机号：<span><input type="text" name="wh-phone" class="with-input phone"/></span><span class="xing">*</span><span class="t-c">确保提现顺利到达您的账号</span></label>
+							</td>
+						</tr>
+						<tr>
+						    <td colspan="3"><div class="msg phonel"></div></td>
+						</tr>
+						<tr class="mg">
+							<td colspan="3">
+								<label for="wh-money">请输入提现金额：<span><input type="text" name="wh-money" class="with-input money"/></span>  &nbsp;&nbsp;&nbsp;元</label>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="3"><div class="msg moneyl"></div></td>
+						</tr>
+						<tr class="mg">
+							<td colspan="3">
+								<label for="wh-money">提现银行卡：</label>
+							</td>
+						</tr>
+					</thead>
+				</table>
+				<table class="stable1 bd" >
+					<thead>
+						<tr class="img">
+							<td><label><input type="radio"name="bank" checked="checked" class="bank-input"/><span><i class="icon ICBC"></i></span></label></td>
+							<td>
+							<label><input type="radio"name="bank" class="bank-input"/><span><i class="icon CCB"></i></span></label>
+							</td>
+							<td><label><input type="radio" name="bank" class="bank-input"/><span><i class="icon ABC"></i></span></label></td>
+							<td><label><input type="radio" name="bank" class="bank-input"/><span><i class="icon CEB"></i></span></label></td>
+							<td><label><input type="radio" name="bank" class="bank-input"/><span><i class="icon CMBC"></i></span></label></td>
+						</tr>
+						<tr class="img">
+							<td><label><input type="radio" name="bank"class="bank-input"/><span><i class="icon CNB"></i></span></label></td>
+							<td>
+							<label><input type="radio" name="bank" class="bank-input"/><span><i class="icon BOC"></i></span></label>
+							</td>
+							<td><label><input type="radio" name="bank" class="bank-input"/><span><i class="icon BCM"></i></span></label></td>
+							<td><label><input type="radio"name="bank" class="bank-input"/><span><i class="icon PF"></i></span></label></td>
+							<td><label><input type="radio" name="bank" class="bank-input"/><span><i class="icon BEA"></i></span></label></td>
+						</tr>
+						<tr class="mg">
+							<td colspan="5">
+								<select class="select">
+									<option>其他银行</option>
+									<option>其他银行</option>
+									<option>其他银行</option>
+								</select>
+							</td>
+						</tr>
+						<tr class="mg">
+							<td colspan="5">
+								<div class="tx"><a href="">立即提现</a></div>
+							</td>
+						</tr>
+					</thead>
+				</table>
+            </form>	
+           
+		</div>
+		<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+		 <script type="text/javascript" src="js/withdraw.js"></script>
+	</body>
+</html>
